@@ -96,8 +96,8 @@ class Controller {
   }
   static async adminPage(req, res) {
     try {
-      const data = await WorkoutPlan.findAll()
-      // console.log(data);
+      const data = await WorkoutPlan.findAll();
+      console.log(data);
 
       res.render('adminPage.ejs', { data })
     } catch (error) {
