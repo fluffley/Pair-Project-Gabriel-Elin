@@ -9,19 +9,14 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      ExerciseId: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: 'Exercises',
-          id: 'id'
-        }
-      },
       UserId: {
         type: Sequelize.INTEGER,
         references: {
           model: 'Users',
-          id: 'id'
-        }
+          key: 'id'
+        },
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
       },
       startDate: {
         type: Sequelize.DATE

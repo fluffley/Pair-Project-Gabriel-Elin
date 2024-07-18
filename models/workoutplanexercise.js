@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class Exercise extends Model {
+  class WorkoutPlanExercise extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,17 +11,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Exercise.belongsToMany(models.WorkoutPlan, {through: 'WorkoutPlanExercises', foreignKey: 'ExerciseId'})
+      WorkoutPlanExercise.belongsTo(models.WorkoutPlan, { foreignKey: 'WorkoutPlanId' });
+      WorkoutPlanExercise.belongsTo(models.Exercise, { foreignKey: 'ExerciseId' });
     }
   }
-  Exercise.init({
-    exerciseName: DataTypes.STRING,
-    description: DataTypes.TEXT,
-    imageURL: DataTypes.STRING,
-    interval: DataTypes.DATE
+  WorkoutPlanExercise.init({
+    WorkoutPlanId: DataTypes.INTEGER,
+    ExerciseId: DataTypes.INTEGER
   }, {
     sequelize,
-    modelName: 'Exercise',
+    modelName: 'WorkoutPlanExercise',
   });
-  return Exercise;
+  return WorkoutPlanExercise;
 };

@@ -1,0 +1,62 @@
+[
+  {
+    "exerciseName": "Push Up",
+    "description": "Start in a plank position, lower your body until your chest nearly touches the floor, then push back up.",
+    "interval": "1 day",
+    "imageURL": "https://images.squarespace-cdn.com/content/v1/58501b0cf5e23149e5589e12/1585601917653-J791ZN5ZWSK565NIZSS1/1_WZmDgcJO40Va5mVgdfbz7g%402x.jpeg"
+  },
+  {
+    "exerciseName": "Squat",
+    "description": "Stand with feet shoulder-width apart, lower your hips down and back as if sitting on a chair, then stand back up.",
+    "interval": "2 days",
+    "imageURL": "https://static.strengthlevel.com/images/exercises/bodyweight-squat/bodyweight-squat-800.jpg"
+  },
+  {
+    "exerciseName": "Plank",
+    "description": "Hold a push-up position with your weight on your forearms, elbows, and toes.",
+    "interval": "3 days",
+    "imageURL": "https://fitnessprogramer.com/wp-content/uploads/2021/02/plank.gif"
+  },
+  {
+    "exerciseName": "Lunge",
+    "description": "Step forward with one leg and lower your hips until both knees are bent at about a 90-degree angle.",
+    "interval": "2 days",
+    "imageURL": "https://weighttraining.guide/wp-content/uploads/2016/10/Dumbbell-Lunge-resized-fixed.png"
+  },
+  {
+    "exerciseName": "Burpee",
+    "description": "From a standing position, drop into a squat, kick your feet back into a plank, return to squat, and jump up.",
+    "interval": "1 day",
+    "imageURL": "https://personallevelfitness.com/wp-content/uploads/2018/05/bURPEE.jpg"
+  },
+  {
+    "exerciseName": "Mountain Climber",
+    "description": "Start in a plank position, bring one knee towards your chest, then switch legs in a running motion.",
+    "interval": "2 days",
+    "imageURL": "https://rejuvage.com/wp-content/uploads/2019/07/iStock-957699448.jpg"
+  },
+  {
+    "exerciseName": "Bicycle Crunch",
+    "description": "Lie on your back, pedal your legs in the air while reaching your opposite elbow towards each knee.",
+    "interval": "3 days",
+    "imageURL": "https://weighttraining.guide/wp-content/uploads/2016/11/bicycle-crunch-resized-1.png"
+  },
+  {
+    "exerciseName": "Tricep Dip",
+    "description": "Sit on the edge of a chair, lower your body by bending your elbows, then push back up.",
+    "interval": "2 days",
+    "imageURL": "https://cdn-cccio.nitrocdn.com/sQAAylIpwgMYZgBLSXcMgCkUIbfIzHvb/assets/images/optimized/rev-3d9de4c/www.aleanlife.com/wp-content/uploads/2020/08/Triceps-Dips-Floor.gif"
+  },
+  {
+    "exerciseName": "Jumping Jack",
+    "description": "Jump with your legs spread and arms reaching overhead, then return to a standing position.",
+    "interval": "1 day",
+    "imageURL": "https://www.researchgate.net/publication/341734848/figure/fig1/AS:896516470362114@1590757591713/Sample-of-Jumping-Jacks-Exercise-4.png"
+  },
+  {
+    "exerciseName": "High Knees",
+    "description": "Run in place, bringing your knees up to hip level with each step.",
+    "interval": "1 day",
+    "imageURL": "https://www.spotebi.com/wp-content/uploads/2014/10/high-knees-exercise-illustration.jpg"
+  }
+]

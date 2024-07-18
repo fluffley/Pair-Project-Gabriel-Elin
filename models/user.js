@@ -12,15 +12,22 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       User.hasOne(models.Profile)
+      User.hasMany(models.WorkoutPlan)
     }
   }
   User.init({
     userName: DataTypes.STRING,
     email: DataTypes.STRING,
-    password: DataTypes.STRING
+    password: DataTypes.STRING,
+    role: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'User',
+  });
+  User.addHook('beforeCreate', (user, options) => {
+    if (user.email) {
+      user.email = user.email.toLowerCase();
+    }
   });
   return User;
 };

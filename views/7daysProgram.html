@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Days Gym Program - Swole Universe</title>
+    <style>
+        * {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: #f4f4f4;
+        }
+
+        .wrapper {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            position: relative;
+        }
+
+        a.tbl-biru {
+            background: #3f72af;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 15px 20px 15px 20px;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a.tbl-biru:hover {
+            background: #fc5185;
+            text-decoration: none;
+        }
+
+        .logo a {
+            font-size: 50px;
+            font-weight: 800;
+            float: left;
+            font-family: courier;
+            color: #364f6b;
+        }
+
+        .menu {
+            float: right;
+        }
+
+        nav {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            line-height: 80px;
+            position: sticky;
+            position: -webkit-sticky; 
+            top: 0;
+            background: #FFFFFF;
+            z-index: 1;
+            border-bottom: 1px solid #364f6b;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 0px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-family: 'comic sans ms';
+            font-weight: 800;
+            font-size: 45px;
+            margin-bottom: 20px;
+            color: #364f6b;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .program {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .program-day {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 30%;
+        }
+
+        .program-day h3 {
+            font-family: 'comic sans ms';
+            font-weight: bold;
+            font-size: 30px;
+            color: #364f6b;
+            margin-bottom: 15px;
+        }
+
+        .program-day ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .program-day ul li {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #dedede;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .footer-section {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-family: 'comic sans ms';
+            font-weight: 800;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #364f6b;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        #copyright {
+            text-align: center;
+            width: 100%;
+            padding: 50px 0px 50px 0px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>Swole Universe</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#id">Welcome! _nama member_ </a></li>
+                    <li><a href="/wholegym/views/index.html" class="tbl-biru">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <h2>7 Days Gym Program</h2>
+        <div class="program">
+            <div class="program-day">
+                <h3>Day 1: Upper Body</h3>
+                <ul>
+                  <li><input type="checkbox"> Warm-up: 10 minutes of cardio</li>
+                  <li><input type="checkbox"> Chest Press: 3 sets of 12 reps</li>
+                  <li><input type="checkbox"> Lat Pulldown: 3 sets of 12 reps</li>
+                  <li><input type="checkbox"> Shoulder Press: 3 sets of 12 reps</li>
+                  <li><input type="checkbox"> Bicep Curls: 3 sets of 15 reps</li>
+                  <li><input type="checkbox"> Tricep Dips: 3 sets of 15 reps</li>
+                  <li><input type="checkbox"> Cool down: Stretching for 10 minutes</li>
+              </ul>
+          </div>
+          <div class="program-day">
+              <h3>Day 2: Lower Body</h3>
+              <ul>
+                  <li><input type="checkbox"> Warm-up: 10 minutes of cardio</li>
+                  <li><input type="checkbox"> Squats: 3 sets of 15 reps</li>
+                  <li><input type="checkbox"> Lunges: 3 sets of 15 reps per leg</li>
+                  <li><input type="checkbox"> Leg Press: 3 sets of 12 reps</li>
+                  <li><input type="checkbox"> Calf Raises: 3 sets of 20 reps</li>
+                  <li><input type="checkbox"> Hamstring Curls: 3 sets of 12 reps</li>
+                  <li><input type="checkbox"> Cool down: Stretching for 10 minutes</li>
+              </ul>
+          </div>
+          <div class="program-day">
+              <h3>Day 3: Full Body</h3>
+              <ul>
+                  <li><input type="checkbox"> Warm-up: 10 minutes of cardio</li>
+                  <li><input type="checkbox"> Deadlifts: 3 sets of 12 reps</li>
+                  <li><input type="checkbox"> Bench Press: 3 sets of 12 reps</li>
+                  <li><input type="checkbox"> Rows: 3 sets of 12 reps</li>
+                  <li><input type="checkbox"> Shoulder Raises: 3 sets of 15 reps</li>
+                  <li><input type="checkbox"> Planks: 3 sets of 1 minute</li>
+                  <li><input type="checkbox"> Cool down: Stretching for 10 minutes</li>
+              </ul>
+            </div>
+            <div class="program-day">
+                <h3>Day 4: Cardio and Core</h3>
+                <ul>
+                    <li><input type="checkbox"> Warm-up: 10 minutes of light cardio</li>
+                    <li><input type="checkbox"> Running: 30 minutes</li>
+                    <li><input type="checkbox"> Cycling: 20 minutes</li>
+                    <li><input type="checkbox"> Russian Twists: 3 sets of 20 reps</li>
+                    <li><input type="checkbox"> Leg Raises: 3 sets of 15 reps</li>
+                    <li><input type="checkbox"> Cool down: Stretching for 10 minutes</li>
+                </ul>
+            </div>
+            <div class="program-day">
+                <h3>Day 5: Upper Body</h3>
+                <ul>
+                    <li><input type="checkbox"> Warm-up: 10 minutes of cardio</li>
+                    <li><input type="checkbox"> Pull-ups: 3 sets of 10 reps</li>
+                    <li><input type="checkbox"> Incline Bench Press: 3 sets of 12 reps</li>
+                    <li><input type="checkbox"> Lateral Raises: 3 sets of 15 reps</li>
+                    <li><input type="checkbox"> Hammer Curls: 3 sets of 15 reps</li>
+                    <li><input type="checkbox"> Skull Crushers: 3 sets of 15 reps</li>
+                    <li><input type="checkbox"> Cool down: Stretching for 10 minutes</li>
+                </ul>
+            </div>
+            <div class="program-day">
+                <h3>Day 6: Lower Body</h3>
+                <ul>
+                    <li><input type="checkbox"> Warm-up: 10 minutes of cardio</li>
+                    <li><input type="checkbox"> Deadlifts: 3 sets of 12 reps</li>
+                    <li><input type="checkbox"> Leg Curls: 3 sets of 12 reps</li>
+                    <li><input type="checkbox"> Step-ups: 3 sets of 15 reps per leg</li>
+                    <li><input type="checkbox"> Seated Calf Raises: 3 sets of 20 reps</li>
+                    <li><input type="checkbox"> Cool down: Stretching for 10 minutes</li>
+                </ul>
+            </div>
+            <div class="program-day">
+                <h3>Day 7: Active Recovery</h3>
+                <ul>
+                    <li><input type="checkbox"> Light jogging: 20 minutes</li>
+                    <li><input type="checkbox"> Yoga: 30 minutes</li>
+                    <li><input type="checkbox"> Foam Rolling: 15 minutes</li>
+                    <li><input type="checkbox"> Meditation: 10 minutes</li>
+                </ul>
+              </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Swole Universe, best Partner!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@swoleuniverse.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Facebook: Swole Universe</p>
+                <p>Instagram: @swoleuniverse</p>
+            </div>
+        </div>
+    </footer>
+    <div id="copyright">
+        <p>&copy; 2024 Swole Universe. All rights reserved.</p>
+    </div>
+</body>
+</html>

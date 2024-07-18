@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Template - Swole Universe</title>
+    <style>
+        * {
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .wrapper {
+            width: 1100px;
+            margin: auto;
+            position: relative;
+        }
+
+        .logo a {
+            font-size: 50px;
+            font-weight: 800;
+            float: left;
+            font-family: courier;
+            color: #364f6b;
+        }
+
+        .menu {
+            float: right;
+        }
+
+        nav {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            line-height: 80px;
+            position: sticky;
+            position: -webkit-sticky; 
+            top: 0;
+            background: #FFFFFF;
+            z-index: 1;
+            border-bottom: 1px solid #364f6b;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 0px 16px 0px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: auto;
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+        .kolom {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .kolom .deskripsi {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'comic sans ms';
+            color: #364f6b;
+        }
+
+        h2 {
+            font-family: 'comic sans ms';
+            font-weight: 800;
+            font-size: 45px;
+            margin-bottom: 20px;
+            color: #364f6b;
+            width: 100%;
+            line-height: 50px;
+        }
+
+        a.tbl-biru {
+            background: #3f72af;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 15px 20px 15px 20px;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a.tbl-biru:hover {
+            background: #fc5185;
+            text-decoration: none;
+        }
+
+        a.tbl-pink {
+            background: #fc5185;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 15px 20px 15px 20px;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a.tbl-ocean {
+            background: #51affc;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 15px 20px 15px 20px;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a.tbl-pink:hover {
+            background: #3f72af;
+            text-decoration: none;
+        }
+
+        p {
+            margin: 10px 0px 10px 0px;
+            padding: 10px 0px 10px 0px;
+        }
+
+        .tengah {
+            text-align: center;
+            width: 100%;
+        }
+
+        .tutor-list {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .footer-section {
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        h3 {
+            font-family: 'comic sans ms';
+            font-weight: 800;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #364f6b;
+            width: 100%;
+            line-height: 50px;
+        }
+
+        #copyright {
+            text-align: center;
+            width: 100%;
+            padding: 50px 0px 50px 0px;
+            margin-top: 50px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 300px;
+            margin: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #364f6b;
+        }
+
+        .card-description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .card-button {
+            background: #3f72af;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .card-button:hover {
+            background: #fc5185;
+        }
+
+        @media screen and (max-width: 991.98px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .wrapper {
+                width: 90%;
+            }
+
+            .logo a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav .menu {
+                width: 100%;
+                margin: 0;
+            }
+
+            nav .menu ul {
+                text-align: center;
+                margin: auto;
+                line-height: 60px;
+            }
+
+            nav .menu ul li {
+                display: inline-block;
+                float: none;
+            }
+
+            section {
+                display: block;
+            }
+
+            section img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .kartu-tutor {
+                width: 50%;
+            }
+
+            .kartu-partner {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<nav>
+  <div class="wrapper">
+    <div class="logo"><a href=''>Swole Universe</a></div>
+    <div class="menu">
+        <ul>
+            <li><a href="/logout" class="tbl-biru">Logout</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+<body>
+    <center>
+        <div class="card-button">
+            <ul>
+                <li><a href="/admin/page/addPlan">Add New Plan</a></li>
+            </ul>
+        </div>
+    </center>
+    <% data.map(el => {%>
+    <div class="card-container">
+        <div class="card">
+            <img src="" alt="">
+            <div class="card-content">
+                    <h3 class="card-title"><%= el.durationInDays %> day(s) program </h3>
+                    <p class="card-description"></p>
+                    <a href="/arts/<%= el.id %>/delete" class="card-button">Delete</a>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+</body>
+</html>

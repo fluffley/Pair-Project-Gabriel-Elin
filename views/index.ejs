@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swole Universe</title>
+    <style>
+        * {
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .wrapper {
+            width: 1100px;
+            margin: auto;
+            position: relative;
+        }
+
+        .logo a {
+            font-size: 50px;
+            font-weight: 800;
+            float: left;
+            font-family: courier;
+            color: #364f6b;
+        }
+
+        .menu {
+            float: right;
+        }
+
+        nav {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            line-height: 80px;
+            position: sticky;
+            position: -webkit-sticky; 
+            top: 0;
+            background: #FFFFFF;
+            z-index: 1;
+            border-bottom: 1px solid #364f6b;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 0px 16px 0px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: auto;
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+        .kolom {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .kolom .deskripsi {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'comic sans ms';
+            color: #364f6b;
+        }
+
+        h2 {
+            font-family: 'comic sans ms';
+            font-weight: 800;
+            font-size: 45px;
+            margin-bottom: 20px;
+            color: #364f6b;
+            width: 100%;
+            line-height: 50px;
+        }
+
+        a.tbl-biru {
+            background: #3f72af;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 15px 20px 15px 20px;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a.tbl-biru:hover {
+            background: #fc5185;
+            text-decoration: none;
+        }
+
+        a.tbl-pink {
+            background: #fc5185;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 15px 20px 15px 20px;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a.tbl-ocean {
+            background: #51affc;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 15px 20px 15px 20px;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a.tbl-pink:hover {
+            background: #3f72af;
+            text-decoration: none;
+        }
+
+        p {
+            margin: 10px 0px 10px 0px;
+            padding: 10px 0px 10px 0px;
+        }
+
+        .tengah {
+            text-align: center;
+            width: 100%;
+        }
+
+        .tutor-list {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .kartu-tutor {
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        .kartu-tutor img {
+            width: 80%;
+            border-radius: 50%;
+        }
+
+        .kartu-tutor p {
+            font-family: 'comic sans ms';
+            font-weight: 800;
+            font-size: 25px;
+            text-align: center;
+            color: #364f6b;
+        }
+
+        .partner-list {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .kartu-partner {
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        .kartu-partner img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        #contact {
+            background: #dedede;
+            padding: 50px 0px 50px 0px;
+        }
+
+        .footer {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .footer-section {
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        h3 {
+            font-family: 'comic sans ms';
+            font-weight: 800;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #364f6b;
+            width: 100%;
+            line-height: 50px;
+        }
+
+        #copyright {
+            text-align: center;
+            width: 100%;
+            padding: 50px 0px 50px 0px;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 991.98px) {
+            .wrapper {
+                width: 90%;
+            }
+
+            .logo a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav .menu {
+                width: 100%;
+                margin: 0;
+            }
+
+            nav .menu ul {
+                text-align: center;
+                margin: auto;
+                line-height: 60px;
+            }
+
+            nav .menu ul li {
+                display: inline-block;
+                float: none;
+            }
+
+            section {
+                display: block;
+            }
+
+            section img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .kartu-tutor {
+                width: 50%;
+            }
+
+            .kartu-partner {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>Swole Universe</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Strength and Cardio</a></li>
+                    <li><a href="#tutors">Tutors</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/login/admin" class="tbl-biru">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!-- untuk home -->
+        <section id="home">
+            <img src="https://img.freepik.com/premium-vector/boy-lifting-dumbbells-fitness-cartoon-character-vector-illustration_1142-99866.jpg?ga=GA1.1.1010782538.1721225224&semt=ais_user"/>
+            <div class="kolom">
+                <p class="deskripsi">Push The Limit Broh</p>
+                <h2>You dont have to be extreme, just consistent</h2>
+                <p><a href="/join" class="tbl-ocean">Join</a></p>
+            </div>
+        </section>
+
+        <!-- untuk courses -->
+        <section id="courses">
+            <div class="kolom">
+                <p class="deskripsi">You Will Need This</p>
+                <h2>Strength Class</h2>
+                <p>Choose a program that can assist you in making your workouts easier</p>
+                <p></p>
+                <p><a href="" class="tbl-biru">Start a Class for 3 Days</a></p>
+
+                <p><a href="" class="tbl-biru">Start a Class for 7 Days</a></p>
+
+                <p><a href="" class="tbl-biru">Start a Class for 14 Days</a></p>
+            </div>
+            <img src="https://img.freepik.com/free-vector/retro-cartoon-workout-sticker-collection_23-2149206893.jpg?ga=GA1.1.1010782538.1721225224&semt=ais_user"/>
+        </section>
+
+        <!-- untuk tutors -->
+        <section id="tutors">
+            <div class="tengah">
+                <div class="kolom">
+                    <h2>Personal Trainer</h2>
+                    <p>Best Partner For You!</p>
+                </div>
+
+                <div class="tutor-list">
+                    <div class="kartu-tutor">
+                        <img src="/wholegym/pictures/foto dicky.jpg"/>
+                        <p>Dicky Digsss</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="/wholegym/pictures/foto dicky.jpg"/>
+                        <p>Ngab Mardicky</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="/wholegym/pictures/foto imam.jpg"/>
+                        <p>Imam Well</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="/wholegym/pictures/foto imam.jpg"/>
+                        <p>Imam Bad</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- untuk partners -->
+        <section id="partners">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi"></p>
+                    <h2>Partners</h2>
+                </div>
+
+                <div class="partner-list">
+                    <div class="kartu-partner">
+                        <img src="/wholegym/pictures/celfit gym.png"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="/wholegym/pictures/fithub gym.png"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="/wholegym/pictures/ftl gym.png"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="/wholegym/pictures/fitness gym.jpg"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="/wholegym//pictures/anytime gym.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>Swole Gym</h3>
+                    <p>Your best partner!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Swole Gym berdiri sejak 2025</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>GOP 100</p>
+                    <p>Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15345</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <p><b>YouTube: </b>Swole Universe</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2025. <b>Swole Universe</b> All Rights Reserved.
+        </div>
+    </div>
+    
+</body>
+</html>
