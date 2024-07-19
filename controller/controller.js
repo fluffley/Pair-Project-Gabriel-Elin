@@ -1,5 +1,5 @@
 const { User, Profile, Exercise, WorkoutPlan, WorkoutPlanExercise } = require('../models/index')
-const { op } = require('sequelize')
+const { Op } = require('sequelize')
 const bcrypt = require('bcryptjs')
 const Helper = require('../helper/helper')
 
@@ -19,9 +19,28 @@ class Controller {
       res.render('joinPages.ejs')
     } catch (error) {
       res.send(error)
-
     }
   }
+
+static async programExc (req,res) {
+  try {
+    const {search} = req.query
+      const option = {}
+      if (search) {
+        option.where = {
+          exerciseName: {
+            [Op.iLike]: `%${search}%`,
+          }
+        }
+      }
+    const gyms = await Exercise.findAll(option)
+      
+    res.render('programExcersie', {gyms})
+  } catch (error) {
+    res.send(error)
+  }
+}
+
   static async registered(req, res) {
     try {
       const { userName, email, password, role } = req.body
@@ -58,7 +77,7 @@ class Controller {
         // console.log(verify);
         req.session.userId = verify.id
 
-        res.redirect('/')
+        res.redirect('/programExcersie')
       }else {
         res.send(error,'Your username/password does not match')
       }
@@ -96,7 +115,16 @@ class Controller {
   }
   static async adminPage(req, res) {
     try {
-      const data = await WorkoutPlan.findAll();
+      const data = await WorkoutPlan.findAll({
+        include: {
+          model: User,
+          where: {
+            role: {
+              [Op.not]: 'admin'
+            }
+          }
+        }
+      });
       console.log(data);
 
       res.render('adminPage.ejs', { data })
@@ -106,7 +134,15 @@ class Controller {
   }
   static async addPlan(req, res) {
     try {
-      res.render('formAddPlan.ejs')
+      const data = await User.findAll({
+        where: {
+          role: {
+            [Op.not]: 'admin'
+          }
+        }
+      })
+      console.log(data);
+      res.render('formAddPlan.ejs', {users: data})
     } catch (error) {
       res.send(error)
     }

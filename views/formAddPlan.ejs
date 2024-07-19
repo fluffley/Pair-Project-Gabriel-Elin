@@ -15,7 +15,12 @@
       <label for="endDate">End Date:</label>
       <input type="date" id="endDate" name="endDate" required><br><br>
       <label for="userId">User ID:</label>
-      <input type="text" id="UserId" name="UserId" required><br><br>
+      <select name="UserId" id="">
+        <% users.forEach(el => { %>
+         <option value="<%= el.id %>"><%= el.userName %></option>
+        <% }) %>
+        <br>
+      </select>
       <button type="submit">Add Workout Plan</button>
     </form>
   </center>
